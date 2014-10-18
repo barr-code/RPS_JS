@@ -1,13 +1,16 @@
 function Rock(){
 	this.type = 'Rock'
+	this.beats = 'Scissors'
 };
 
 function Scissors(){
 	this.type = 'Scissors'
+	this.beats = 'Paper'
 };
 
 function Paper(){
 	this.type = 'Paper'
+	this.beats = 'Rock'
 };
 
 function Draw(){};
@@ -15,11 +18,7 @@ function Draw(){};
 function Game(){};
 
 Game.prototype.winner = function(choiceOne, choiceTwo) {
-	if(choiceOne.type === 'Rock' && choiceTwo.type === 'Scissors') return choiceOne;
-	if(choiceOne.type === 'Paper' && choiceTwo.type === 'Rock') return choiceOne;
-	if(choiceOne.type === 'Scissors' && choiceTwo.type === 'Rock') return choiceTwo;
-	if(choiceOne.type === 'Rock' && choiceTwo.type === 'Paper') return choiceTwo;
-	if(choiceOne.type === 'Scissors' && choiceTwo.type === 'Paper') return choiceOne;
-	if(choiceOne.type === 'Paper' && choiceTwo.type === 'Scissors') return choiceTwo;
+	if(choiceOne.beats === choiceTwo.type) return choiceOne
+	if(choiceTwo.beats === choiceOne.type) return choiceTwo
 	if(choiceOne.type === choiceTwo.type) return draw;
 };
