@@ -20,5 +20,5 @@ function Game(){};
 Game.prototype.winner = function(choiceOne, choiceTwo) {
 	if(choiceOne.beats === choiceTwo.type) return 'You win!'
 	if(choiceTwo.beats === choiceOne.type) return 'Computer wins!'
-	if(choiceOne.type === choiceTwo.type) return 'draw';
+	if(choiceOne.type === choiceTwo.type) return 'It\'s a draw';
 };

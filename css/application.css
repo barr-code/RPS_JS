@@ -11,35 +11,38 @@ body {
 	background-size: 900% 100%;
 }
 
-#title {
-	position: fixed;
-	width: 100%;
-	opacity: .6;
+#header {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "28 Days Later";
+	font-size: 80px;
+	opacity: 0.65;
+	text-align: center;
+
 }
 
 #weapons {
-
-	padding-top: 27px;
-	position: fixed;
-	width: 100%;
+	padding-top: 10px;
 	position: center;
-	margin: 10%;
+	width: 100%;
+	margin-left: 10%;
 	opacity: 0.6;
 }
 	
 #rock {
 	width: 23%;
-	height: 20%;
+	height: 30%;
 	padding-right: 10px;
 }
 
 #paper {
 	width: 25%;
-	height: 25%;
+	height: 35%;
 	padding-right: 10px;
 }
 
 #scissors {
 	width: 25%;
-	height: 25%;
+	height: 35%;
 }

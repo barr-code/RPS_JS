@@ -5,7 +5,7 @@ $(document).ready(function (){
 		playerWeapon = $(this).data('weapon');
 		playerChoice = choices[playerWeapon]
 		computerChoice = randomChoice(options);
-		$('li').html(game.winner(playerChoice, computerChoice));
+		$('p').html(game.winner(playerChoice, computerChoice));
 	});
 });
 
