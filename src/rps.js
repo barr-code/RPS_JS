@@ -13,12 +13,12 @@ function Paper(){
 	this.beats = 'Rock'
 };
 
-function Draw(){};
+// function Draw(){};
 
 function Game(){};
 
 Game.prototype.winner = function(choiceOne, choiceTwo) {
-	if(choiceOne.beats === choiceTwo.type) return choiceOne
-	if(choiceTwo.beats === choiceOne.type) return choiceTwo
-	if(choiceOne.type === choiceTwo.type) return draw;
+	if(choiceOne.beats === choiceTwo.type) return 'You win!'
+	if(choiceTwo.beats === choiceOne.type) return 'Computer wins!'
+	if(choiceOne.type === choiceTwo.type) return 'draw';
 };
