@@ -7,17 +7,19 @@ describe('RPS', function(){
 		});
 
 	describe('the types of weapons', function() {
-		it('rock', function(){
+
+		it('Rock', function(){
 			expect(rock.type).toEqual('Rock');
 		});
 
-		it('scissors', function(){
+		it('Scissors', function(){
 			expect(scissors.type).toEqual('Scissors')
 		});
 
-		it('paper', function(){
+		it('Paper', function(){
 			expect(paper.type).toEqual('Paper')
 		});
+
 	});
 
 	describe('playing the game', function(){
@@ -27,33 +29,12 @@ describe('RPS', function(){
 			draw = new Draw;
 		});
 
-		it('rock beats scissors', function(){
-			expect(game.winner(rock, scissors)).toEqual(rock)
+		it('Rock beats Scissors', function() {
+			choiceOne = new Rock;
+			choiceTwo = new Scissors;
+			expect(game.winner(choiceOne, choiceTwo)).toEqual('You win!')
 		});
-
-		it('scissors loses to rock', function(){
-			expect(game.winner(scissors, rock)).toEqual(rock)
-		});
-
-		it('paper beats rock', function(){
-			expect(game.winner(paper, rock)).toEqual(paper)
-		});
-
-		it('rock loses to paper', function(){
-			expect(game.winner(rock, paper)).toEqual(paper)
-		});
-
-		it('scissors beats paper', function(){
-			expect(game.winner(scissors, paper)).toEqual(scissors)
-		});
-
-		it('paper loses to scissors', function(){
-			expect(game.winner(paper, scissors)).toEqual(scissors)
-		});
-
-		it('rock draws rock', function(){
-			expect(game.winner(rock, rock)).toEqual(draw)
-		});
+		
 	});
 
 });

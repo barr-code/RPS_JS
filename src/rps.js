@@ -13,9 +13,9 @@ function Paper(){
 	this.beats = 'Rock'
 };
 
-// function Draw(){};
+function Draw() {};
 
-function Game(){};
+function Game() {};
 
 Game.prototype.winner = function(choiceOne, choiceTwo) {
 	if(choiceOne.beats === choiceTwo.type) return 'You win!'

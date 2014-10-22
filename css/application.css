@@ -8,41 +8,190 @@ body {
 	position: fixed;
 	background-image: url("../images/background.jpg");
 	background-repeat: no-repeat;
-	background-size: 900% 100%;
+	background-size: 100% 100%;
 }
 
-#header {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: "28 Days Later";
-	font-size: 80px;
-	opacity: 0.65;
-	text-align: center;
+#header{
+position: relative;
+margin-left: auto;
+margin-right: auto;
+font-family: "28 Days Later";
+font-size: 80px;
+text-align: center;
+text-shadow: #100000 0 0 0;
+-moz-animation-name:bounce_blurringTextG;
+-moz-animation-duration: 10s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-webkit-animation-name:bounce_blurringTextG;
+-webkit-animation-duration: 10s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-ms-animation-name:bounce_blurringTextG;
+-ms-animation-duration: 10s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+-o-animation-name:bounce_blurringTextG;
+-o-animation-duration: 10s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+animation-name:bounce_blurringTextG;
+animation-duration: 10s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+}
 
+@-moz-keyframes bounce_blurringTextG{
+0%{
+text-shadow: #000000 0 0 0;
+}
+
+50%{
+text-shadow: #FFFFFF 0 0 100px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-webkit-keyframes bounce_blurringTextG{
+0%{
+text-shadow: #000000 0 0 0;
+}
+
+50%{
+text-shadow: #FFFFFF 0 0 100px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-ms-keyframes bounce_blurringTextG{
+0%{
+text-shadow: #000000 0 0 0;
+}
+
+50%{
+text-shadow: #FFFFFF 0 0 100px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-o-keyframes bounce_blurringTextG{
+0%{
+text-shadow: #000000 0 0 0;
+}
+
+50%{
+text-shadow: #FFFFFF 0 0 100px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@keyframes bounce_blurringTextG{
+0%{
+text-shadow: #000000 0 0 0;
+}
+
+50%{
+text-shadow: #FFFFFF 0 0 100px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+#scissors{
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+#scissors:active {
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+
+#rock{
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+#rock:hover {
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#paper{
+  -webkit-transition: all 13s ease;
+     -moz-transition: all 13s ease;
+       -o-transition: all 13s ease;
+      -ms-transition: all 13s ease;
+          transition: all 13s ease;
+}
+ 
+#paper:hover {
+  -webkit-transform: rotate(-360deg);
+     -moz-transform: rotate(-360deg);
+       -o-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 #weapons {
-	padding-top: 10px;
 	position: center;
 	width: 100%;
-	margin-left: 10%;
-	opacity: 0.6;
 }
 	
 #rock {
 	width: 23%;
 	height: 30%;
-	padding-right: 10px;
+	position: center;
+	padding-left: 110px;
+	padding-right: 20px;
+	margin-left: 10px;
+	opacity: .6;
 }
 
 #paper {
 	width: 25%;
 	height: 35%;
-	padding-right: 10px;
+	padding-right: 50px;
+	opacity: .6;
 }
 
+
 #scissors {
+	padding-right: 10px;
 	width: 25%;
 	height: 35%;
+	opacity: .6;
 }
